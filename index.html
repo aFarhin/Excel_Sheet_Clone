@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Excel Clone</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="current-cell">No Cell</h1>
+    <button id="bold-btn"><i class="material-icons">format_bold</i></button>
+    <button id="italics-btn"><i class="material-icons">format_italic</i></button>
+    <button id="underline-btn"><i class="material-icons">format_underline</i></button>
+
+
+
+    <button id="left-align"><i class="material-icons al">format_align_left</i></button>
+    <button id="center-align"><i class="material-icons al">format_align_center</i></button>
+    <button id="right-align"><i class="material-icons al">format_align_right</i></button>
+
+    <br />
+    <br />
+    <select id="font-size">
+    </select>
+
+    <select id="font-family">
+      <option value="serif">Serif</option>
+      <option value="sans-serif">Sans-serif</option>
+      <option value="monospace">Monospace</option>
+      <option value="cursive">Cursive</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Georgia, serif">Georgia</option>
+      <option value="Helvetica, sans-serif">Helvetica</option>
+      <option value="Lucida Sans Unicode, sans-serif">Lucida Sans Unicode</option>
+      <option value="Tahoma, sans-serif">Tahoma</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+    </select>
+
+    <label for="text-color"><i class="material-icons">format_color_text</i></label>
+    <input type="color" id="text-color" />
+    <label for="bg-color"><i class="material-icons">format_color_fill</i></label>
+    <input type="color" id="bg-color" />
+
+
+    <br />
+    <br />
+    <button id="cut-btn"><i class="material-icons">content_cut</i><br>Cut</button>
+    <button id="copy-btn"><i class="material-icons">content_copy</i><br>Copy</button>
+    <button id="paste-btn"><i class="material-icons">content_paste</i><br>Paste</button>
+    <br />
+    <br />
+  </div>
+  <table class="my-table">
+    <thead>
+      <tr id="table-heading-row">
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <script src="./script.js"></script>
+</body>
+
+</html>

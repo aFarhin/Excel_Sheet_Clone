@@ -1,0 +1,120 @@
+body {
+  width: auto;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+}
+
+td:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  animation: slide-down 0.5s ease-out;
+  padding-bottom: 10px;
+  background: linear-gradient(gray, white, gray);
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 20px !important;
+  color: rgb(2, 2, 25);
+  border-radius: 10%;
+  border: 2px solid black;
+  padding: 10px;
+  background: linear-gradient(rgb(113, 112, 112), rgb(187, 182, 182), white, rgb(162, 156, 156), rgb(129, 126, 126));
+  text-align: center;
+}
+
+select {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.container>* {
+  margin: 10px;
+  /* font-size: 10px; */
+}
+
+label {
+  cursor: pointer;
+}
+
+
+input[type="color"] {
+  display: none;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  /* font-size: 7px!important; */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button .al {
+  width: 50px;
+  height: 30px;
+}
+
+
+table tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+
+  /* background: linear-gradient(to right, rgb(208, 202, 202), white, rgb(190, 184, 184)); */
+}
+
+/* set background color for even rows */
+table tr:nth-child(even) td {
+  background-color: #e9e9e9;
+
+  /* background: linear-gradient( to right, rgb(169, 165, 165), rgb(202, 197, 197), rgb(177, 171, 171)); */
+}
+
+
+table th {
+  background-color: #333;
+  background: linear-gradient(to right, black, rgb(49, 49, 49), black, black, rgb(69, 68, 68), black);
+  color: #fff;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    font-size: 1rem !important;
+  }
+
+  .container>* {
+    margin: 10px;
+  }
+}
