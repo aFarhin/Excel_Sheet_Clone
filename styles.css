@@ -5,7 +5,7 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width:100%;
   overflow-x: auto;
 }
 
@@ -24,10 +24,12 @@ td:focus {
 .container {
   display: flex;
   animation: slide-down 0.5s ease-out;
-  padding-bottom: 10px;
+  gap: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
   background: linear-gradient(gray, white, gray);
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 @keyframes slide-down {
@@ -43,13 +45,15 @@ td:focus {
 }
 
 h1 {
-  font-size: 20px !important;
+  font-size: 15px !important;
   color: rgb(2, 2, 25);
   border-radius: 10%;
   border: 2px solid black;
-  padding: 10px;
-  background: linear-gradient(rgb(113, 112, 112), rgb(187, 182, 182), white, rgb(162, 156, 156), rgb(129, 126, 126));
+  padding: 5px;
+  font-weight: bold;
+  /* background: linear-gradient(rgb(113, 112, 112), rgb(187, 182, 182), white, rgb(162, 156, 156), rgb(129, 126, 126)); */
   text-align: center;
+  background-color: rgb(201, 199, 196);
 }
 
 select {
@@ -80,6 +84,12 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
+button i.material-icons {
+  margin-right: 5px;
+  vertical-align: middle; 
+}
+
 
 button .al {
   width: 50px;
